@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dime el Tiempo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar sticky-top flex-md-nowrap p-10 shadow">
+            <div class="container">
+                <a class="col-md-3 col-lg-2 mr-0 px-3" href="Index.html" class="mx-2">
+                    <img src="img/ifp.png" height="40rem">
+                </a>
+                <h1 class="navbar px-3">Dime el tiempo</h1>
+        </nav>
+        <div class="container-form">
+            <div class="container">
+                <div class="form-row">
+                    <div class="col mt-4">
+                        <label for="inputNombre">Nombre:</label>
+                        <input type="text" id="idNombre" class="form-control">
+                        <div id="nombreCorrecto" class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div id="nombreIncorrecto" class="invalid-feedback">
+                            ¡Falta tu nombre!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6 s12">
+                            <form>
+                                <div id="msj-error"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="inputCiudad">Ciudad</label>
+                                        <input type="text" name="ciudad" id="idCiudad" class="form-control">
+                                        <div id="ciudadCorrecto" class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div id="ciudadIncorrecto" class="invalid-feedback">
+                                            ¡Falta ciudad!
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="inputPaís">País</label>
+                                        <select name="país" id="idPais" class="form-select"
+                                            aria-label="Default select example">
+                                            <option selected>--- Seleccione un país ---</option>
+                                            <option value="US">Estados Unidos</option>
+                                            <option value="MX">México</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="CR">Costa Rica</option>
+                                            <option value="ES">España</option>
+                                            <option value="PR">Perú</option>
+                                        </select>
+                                        <div id="paisCorrecto" class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div id="paisIncorrecto" class="invalid-feedback">
+                                            ¡Falta país!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group form-inline" id="ciudadDiv">
+
+                                    <button id="submitCiudad" class="btn btn-outline-primary mt-4">Dime el
+                                        tiempo</button>
+                                    <div>
+
+                                    </div>
+                                    <div id="error"></div>
+                                    <div id="showWeather"></div>
+                            </form>
+                            <div class="row">
+                                <div id="col-12">
+                                    <p id="ciudad"></p>
+                                    <p id="pais"></p>
+                                    <p id="tiempo"></p>
+                                    <p id="name"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <script src="js/index.js"></script>
+
+</body>
+
+</html>
